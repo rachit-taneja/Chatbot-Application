@@ -16,15 +16,15 @@ export const Message = async (req, res) => {
 
     // Knowledge base (static for now)
     const knowledgeBase = [
-      { question: "hi", answer: "Hello! How can I help you today?" },
-      { question: "hello", answer: "Hey there! What’s up?" },
-      { question: "how are you", answer: "I’m doing great, thanks for asking! How about you?" },
-      { question: "your name", answer: "I’m ChatBot, your virtual assistant 🤖." },
-      { question: "bye", answer: "Goodbye! Have a nice day 👋." },
-      { question: "thanks", answer: "You’re welcome! 😊" },
-      { question: "who created you", answer: "this is created by Rachit, using Node.js and MongoDB!" },
-      { question: "help", answer: "Sure! You can ask me about greetings, my name, or general info." },
-      { question: "hi", answer: "Hello! How can I help you?" },
+      // { question: "hi", answer: "Hello! How can I help you today?" },
+      // { question: "hello", answer: "Hey there! What’s up?" },
+      // { question: "how are you", answer: "I’m doing great, thanks for asking! How about you?" },
+      // { question: "your name", answer: "I’m ChatBot, your virtual assistant 🤖." },
+      // { question: "bye", answer: "Goodbye! Have a nice day 👋." },
+      // { question: "thanks", answer: "You’re welcome! 😊" },
+      // { question: "who created you", answer: "this is created by Rachit, using Node.js and MongoDB!" },
+      // { question: "help", answer: "Sure! You can ask me about greetings, my name, or general info." },
+      // { question: "hi", answer: "Hello! How can I help you?" },
       
       
       

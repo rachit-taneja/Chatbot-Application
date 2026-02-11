@@ -78,7 +78,7 @@ function Bot() {
           borderTopRightRadius: "10px",
         }}
       >
-        ChatBot
+        Rachit's ChatBot
       </header>
 
       {/* Chat Area */}
