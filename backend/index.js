@@ -19,7 +19,11 @@ mongoose.connect(mongoURI)
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://chatbot-application-five.vercel.app",
+  origin: [
+    "http://localhost:5173",
+    "https://chatbot-application-five.vercel.app",
+    "https://chatbot-application-git-main-rachit-tanejas-projects.vercel.app"
+  ],
   methods: ["GET", "POST"],
   credentials: true,
 }));
