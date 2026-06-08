@@ -5,38 +5,27 @@ import cors from 'cors';
 
 import chatbotRouters from './routers/chatbot.route.js';
 
-const app = express();
-
-// Load environment variables
 dotenv.config();
 
-// PORT and Mongo URI
+const app = express();
+
 const port = process.env.PORT || 4002;
 const mongoURI = process.env.MONGO_URI;
 
-// Connect to MongoDB
-mongoose.connect(mongoURI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-  .then(() => console.log("✅ Connected to MongoDB"))
-  .catch((error) => console.log("❌ Error connecting to MongoDB:", error));
+mongoose.connect(mongoURI)
+.then(() => console.log("✅ Connected to MongoDB"))
+.catch((err) => console.log("Mongo Error:", err));
 
-// Middleware
 app.use(express.json());
 
-// ✅ Enable CORS for Vite frontend (port 5173)
 app.use(cors({
-  origin: "https://chatbot-application-five.vercel.app/",
+  origin: "https://chatbot-application-five.vercel.app",
   methods: ["GET", "POST"],
   credentials: true,
 }));
 
-// Routes
 app.use("/bot/v1", chatbotRouters);
 
-// Start server
 app.listen(port, () => {
-  console.log(`🚀 Server is running on port ${port}`);
-  console.log(`🔗 Endpoint: http://localhost:${port}/bot/v1/message`);
+  console.log(`🚀 API running on port ${port}`);
 });
