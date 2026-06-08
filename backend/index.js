@@ -27,7 +27,7 @@ app.use(express.json());
 
 // ✅ Enable CORS for Vite frontend (port 5173)
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://chatbot-application-five.vercel.app/",
   methods: ["GET", "POST"],
   credentials: true,
 }));

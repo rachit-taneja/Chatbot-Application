@@ -15,9 +15,12 @@ function Bot() {
     setMessages((prev) => [...prev, { sender: "user", text: input }]);
 
     try {
-      const res = await axios.post("http://localhost:4002/bot/v1/message", {
-        text: input,
-      });
+  const res = await axios.post(
+  `${import.meta.env.VITE_API_URL}/bot/v1/message`,
+  {
+    text: input,
+  }
+);
 
       console.log("Backend response:", res.data); // 🟢 Debug log
 
