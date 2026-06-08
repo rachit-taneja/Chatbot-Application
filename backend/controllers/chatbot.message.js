@@ -40,7 +40,7 @@ export const Message = async (req, res) => {
 
       // Chatbot Identity
       { question: "who are you", answer: "I am a chatbot designed to help you." },
-      { question: "your name", answer: "I’m ChatBot 🤖." },
+      { question: "your name", answer: "I’m Rachit's ChatBot 🤖." },
       { question: "what is your name", answer: "My name is ChatBot." },
       { question: "are you human", answer: "No, I’m a virtual assistant." },
       { question: "are you real", answer: "I exist digitally to help you 😊." },
